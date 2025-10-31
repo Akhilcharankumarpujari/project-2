@@ -1,97 +1,106 @@
+# Quiz App
 
-# Weather App
+A sleek and interactive quiz application built with **React**, **Vite**, and **Tailwind CSS**. Users can test their knowledge on various topics using questions sourced from the Open Trivia Database API.
 
-API Integrated Weather App Using Reactjs and Tailwind CSS.
-
-
-## Installation
-
-Install with npm
-
-Clone the project
-
-```bash
-  git clone https://github.com/gtech-official08/quiz-app.git
-```
-
-Remove `.git` an `README.md` if you want to push this repo on your github.com.
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-``` bash
-npm install
-```
-OR 
-
-```bash
-npm i
-```
-
-Start the server
-
-``` bash
-npm run dev
-```
-
-If you want to see live project on your mobile or other local machine with same wifi connection.
-
-```bash
-npm run dev -- --host
-```
-
-
-## Usages
-
+***
 
 ## Features
 
-- Choose Quiz Type
-- Timer Quiz
-- Glassmorphsim 
-- Show the questions reviews
+- **Quiz Selection**: Choose category, difficulty, question type, and number of questions.
+- **Live Timer**: Answer questions within the time limit.
+- **Instant Results**: See correct, incorrect, and skipped answers after submission.
+- **Responsive Design**: Fully mobile-friendly UI.
+- **Custom Styling**: Background image overlay and modern look using Tailwind CSS.
 
+***
 
 ## Tech Stack
 
-**Client:** ReactJs, ViteJs, TailwindCSS
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Open Trivia DB API](https://opentdb.com/)
 
+***
 
-## Screenshots
+## Getting Started
 
+### Prerequisites
 
-## See Demo
+- [Node.js](https://nodejs.org/) v16+ recommended
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Live Demo:- https://www.youtube.com/watch?v=DzDO-9D0nKU
+### Setup
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/quiz-app.git
+   cd quiz-app
+   ```
 
-### Full Video Tutorial
-Video Link:- https://www.youtube.com/watch?v=DzDO-9D0nKU
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Author
+4. **Open in browser**
+   - Visit `http://localhost:5174` (or shown by Vite)
 
-- [@gtechofficial08](https://github.com/gtech-official08)
+***
 
+## Configuration
 
-## Acknowledgements
+- **Tailwind CSS** is configured in `tailwind.config.js`.
+- **Background Image** can be changed in `App.jsx` by updating the path in the Tailwind class:
+  ```jsx
+  bg-[url('./assets/bg-image.jpg')]
+  ```
+  Place your preferred image in the `public/assets` directory for easy access.
 
- - [Awesome Readme Templates Generator](https://readme.so/)
+***
 
+## Project Structure
 
-## Support
+```
+quiz-app/
+├─ public/
+│  └─ assets/               # Background images and static files
+├─ src/
+│  ├─ api/                  # quizApi.jsx for quiz/cat fetch logic
+│  ├─ components/           # Reusable React components
+│  ├─ pages/                # Home.jsx, Quiz.jsx, etc.
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ tailwind.config.js
+├─ package.json
+└─ README.md
+```
 
-For support, email gtech.official08@gmail.com or DM us on Instagram.
+***
 
+## Credits
 
-## Appendix
+- Questions powered by [Open Trivia DB](https://opentdb.com/)
+- UI styled via [Tailwind CSS](https://tailwindcss.com/)
 
-Don't Forgot to Subscribe, Like, Comment, & Share.
+***
+
+## License
+
+This project is licensed under the MIT License.  
+Feel free to use, modify, and share!
+
+***
 
 
 
